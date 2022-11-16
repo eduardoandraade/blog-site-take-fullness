@@ -1,49 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');   
-
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
-}
-
-
-/* -------------- GLOBAL -------------- */
-
-a {
+    list-style: none;
     text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
+ /* Some Varibales */
+ :root{
+--text-color: #021f2a;
+--bg-color: #004aad;
+--bg1-color: #38b6ff;
+ }
+ /* Custom Scroll Bar */
+ html::-webkit-scrollbar{
+    width: 0.5rem;
+ }
+ html::-webkit-scrollbar-thumb{
+    background: transparent;
+ }
+ html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
+ }
+ section {
+    padding: 50px 100px;
+ }
 
-/* -----X-----X---- GLOBAL ----X-----X----- */
-
-
-/* -------------- NAV -------------- */
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 0 2rem;
-    height: 0rem;
-    min-height: 8vh;
-    overflow: hidden;
-}
-
-.nav .nav-menu .nav-logo{
+ header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+    background: #ffde59;
+ }
+
+ .logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-color) ;
+ }
+
+ .navbar {
+    display: flex;
+    column-gap: 5rem;
+ }
+
+ .navbar li {
+    position: relative;
+ }
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+.navbar a::after {
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background: aliceblue;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: 0.4s;
+}
+.navbar a:hover::after,
+.navbar .bem-estar-active::after {
+    width: 100%;
 }
 
-.nav .img-logo {
-    height: 6vh;
-    
- }
-
- .nav .nav-menu a{
-    font-family: 'Poppins', sans-serif; 
-    color: #d1a12a;
-    font-size: 0.9rem;
-    
- }
-
-/* ---X------X---- NAV ----X------X--- */
+parei no 12min do video
