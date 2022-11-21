@@ -10,13 +10,19 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--------*-----*--------*------->
 </head>
     
 <body>
     <!-- Navbar -->
     <header>
-        <a href="#" class="logo">Take Fullness</a>
+        <div class="logo">
+            <img class="img-logo" src="./assets/img-logo.png" alt="">
+            <a href="#" class="name-logo">Take Fullness</a>
+        </div>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
@@ -27,10 +33,40 @@ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         </ul>
     </header>
-
+    <!-- x x x -->
     
+    <!-- Home Página Inicial -->
+
+    <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide container">
+                <img src="./assets/banner01.jpg" alt="#">
+
+              </div>
+
+              <div class="swiper-slide container">
+                <img src="./assets/banner02.png" alt="#">
+
+              </div>
+
+              <div class="swiper-slide container">
+                <img src="./assets/banner01.jpg" alt="#">
+
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+    </section>
+
+    <!-- x x x -->
+
+
 
     <!-------- Custom Script Funcionalidade --------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <!--------*-----*--------*------->
 </body>
