@@ -214,3 +214,23 @@
 .video-container video {
    width: 768px;
 }
+
+.about {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(1rem, auto));
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+}
+
+.about-text h1 {
+   font-size: 1.7rem;
+   text-transform: capitalize;
+   color: var(--text-color);
+}
+
+.about-text p{
+   font-size: 0.938rem;
+   text-align: justify;
+   margin: 0.5rem 0 1.7rem;
+}
