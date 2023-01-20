@@ -145,6 +145,7 @@
 }
 
 .heading {
+   border: 1px solid red;
    text-align: center;
 }
 .heading h1 {
@@ -154,7 +155,12 @@
    color: var(--bg-color);
 }
 
+.places {
+   border: 1px solid silver;
+}
+
 .places-container {
+   border: 1px solid red;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
    gap: 1.5rem;
@@ -216,8 +222,9 @@
 }
 
 .about {
+   border: 1px solid red;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(1rem, auto));
+   grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
    align-items: center;
    justify-content: center;
    gap: 1.5rem;
@@ -234,3 +241,18 @@
    text-align: justify;
    margin: 0.5rem 0 1.7rem;
 }
+
+.about-img {
+   width: 360px;
+   height: 100%;;
+   overflow: hidden;
+}
+.about-img img {
+   height: 100%;
+   width: 100%;
+}
+.about-img img:hover {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
