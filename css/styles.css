@@ -285,3 +285,13 @@
 .footer-box li a {
    color: var(--text-color);
 }
+
+.copyright{
+   padding: 20px;
+   text-align: center;
+   color: var(--text-color);
+}
+
+header.shadow {
+   background: var(--bg1-color);
+}
