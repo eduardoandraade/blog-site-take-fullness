@@ -335,7 +335,7 @@ header.shadow .navbar a::after {
       padding: 12px 4%;
    }
    #menu-icon{
-      color: var(--bg2-color);
+      color: yellow;
       display: initial;
    }
 
